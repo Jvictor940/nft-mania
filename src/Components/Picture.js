@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Picture() {
+function Picture({picture}) {
     return( 
         <div>
-
+            <img src={picture.webformatURL} />
         </div>
     )
 }
