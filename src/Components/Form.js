@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
         <form onSubmit={handleSubmit} className="new-picture-form">
           <input type="text" onChange={(e) => updateForm(e)} name="webformatURL" placeholder="Image URL" value={imgURL} />
           <input type="text" onChange={(e) => updateForm(e)} name="tags" placeholder="Tags" value={tags}/>
-          <input type="number" onChange={(e) => updateForm(e)} name="amount" placeholder="Price" value={price}/>
+          <input type="number" onChange={(e) => updateForm(e)} name="amount" placeholder="Price" value={amount}/>
           <input type="text" onChange={(e) => updateForm(e)} name="user" placeholder="Created By" value={user}/> 
           <input type="submit" value="Create your own NFT" />
         </form>
