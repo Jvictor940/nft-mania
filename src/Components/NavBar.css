@@ -1,0 +1,40 @@
+.nav-menu{
+    background-color: #EDEDED;
+    padding-bottom: 30px;
+    font-size: 20px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+
+.nav-home{
+    position: fixed;
+    left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-home:hover{
+    color: blue;
+}
+
+.nav-form{
+    text-decoration: none;
+    position: fixed;
+    left: 200px;
+    color: black
+}
+
+.nav-form:hover {
+    color: blue;
+}
+
+.nav-about{
+    text-decoration: none;
+    position: fixed;
+    left: 400px;
+    color: black
+}
+
+.nav-about:hover{
+    color: blue
+}
