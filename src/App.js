@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <PictureContainer pictures={pictures} />
+      <Form setPictures={setPictures} />
     </div>
   );
 }
