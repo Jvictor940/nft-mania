@@ -10,12 +10,15 @@ function App() {
   const [pictures, setPictures] = useState([])
 
   const request = async () => {
-    let req = await fetch('http://localhost:8000/pictures')
+    let req = await fetch('https://pixabay.com/api/?key=26785058-3bf47108f91b1e398f07fb1e0')
     let res = await req.json()
-    setPictures(res)
+    setPictures(res.hits)
   }
   useEffect(() => {
-  request()}, []) 
+    request()
+  }, []) 
+
+  console.log(pictures)
   
   return (
     <div className="App">
