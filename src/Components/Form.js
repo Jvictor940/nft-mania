@@ -22,6 +22,10 @@ const handleSubmit = async (e) => {
      
     setPictures((prevState) => { return [...prevState, res]})
     setForm({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: 0})
+
+    return (
+    console.log("submitted")
+    )
     
 }
 
@@ -31,7 +35,7 @@ const handleSubmit = async (e) => {
           <input type="text" onChange={(e) => updateForm(e)} name="tags" placeholder="Tags" value={tags}/>
           <input type="number" onChange={(e) => updateForm(e)} name="amount" placeholder="Price in Eth" value={amount}/>
           <input type="text" onChange={(e) => updateForm(e)} name="user" placeholder="Created By" value={user}/> 
-          <input type="submit" value="Create your own NFT" />
+          <button className='form-button'>Create your own NFT</button>
         </form>
       );
 }

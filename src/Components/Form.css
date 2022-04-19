@@ -37,8 +37,8 @@
     top: 100px
   }
   
-  input[type="submit"],
-  button {
+  .form-button
+   {
     font-weight: bold;
     font-size: 2em;
     background: rgb(116, 116, 185);
