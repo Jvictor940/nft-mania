@@ -1,0 +1,44 @@
+.new-picture-form {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 95%;
+    height: 90vh;
+    padding: 2em;
+    border: solid rgb(185, 149, 31);
+    background: url(https://media-exp1.licdn.com/dms/image/C4D1BAQGJgXId5M1-Tg/company-background_10000/0/1519800846035?e=2147483647&v=beta&t=Gr0Sahp_nORomKvEQ3J4Z6ggYQb0lDU3zCuUcAuGswA);
+    
+  }
+
+  input[type="text"]
+  {
+    font-weight: bold;
+    width: 700px;
+    font-size: 1em;
+    border: solid black 1px;
+    padding: 0.5em;
+    margin: 10px 0;
+  }
+
+  input[type="number"]
+  {
+    font-weight: bold;
+    font-size: 1em;
+    width: 700px;
+    border: solid black 1px;
+    padding: 0.5em;
+  }
+  
+  input[type="submit"],
+  button {
+    font-weight: bold;
+    font-size: 2em;
+    background: rgb(116, 116, 185);
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 15%;
+  }
+  
