@@ -3,7 +3,7 @@ import './Form.css'
 
 function Form({ setPictures }) {
 
-const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: 0})
+const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: null})
 const { webformatURL, tags, views, likes, user, amount } = form
 
 const updateForm = (e) => {
