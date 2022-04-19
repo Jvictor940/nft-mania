@@ -12,20 +12,7 @@
     
   }
 
-  input[type="text"]
-  {
-    font-weight: bold;
-    width: 700px;
-    font-size: 1em;
-    border: solid black 1px;
-    padding: 0.5em;
-    margin: 10px 0;
-    border-radius: 35px;
-    position: relative;
-    top: 100px
-  }
-
-  input[type="number"]
+  .form-input
   {
     font-weight: bold;
     font-size: 1em;
