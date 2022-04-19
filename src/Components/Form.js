@@ -3,7 +3,7 @@ import './Form.css'
 
 function Form({ setPictures }) {
 
-const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: null})
+const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: ''})
 const { webformatURL, tags, views, likes, user, amount } = form
 
 const updateForm = (e) => {
@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     // console.log("res is", res, typeof res)
      
     setPictures((prevState) => { return [...prevState, res]})
-    setForm({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: 0})
+    setForm({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: ''})
 
     return (
     console.log("submitted")
@@ -31,10 +31,10 @@ const handleSubmit = async (e) => {
 
     return (
         <form onSubmit={handleSubmit} className="new-picture-form">
-          <input type="text" onChange={(e) => updateForm(e)} name="webformatURL" placeholder="Image URL" value={webformatURL} />
-          <input type="text" onChange={(e) => updateForm(e)} name="tags" placeholder="Tags" value={tags}/>
-          <input type="number" onChange={(e) => updateForm(e)} name="amount" placeholder="Price in Eth" value={amount}/>
-          <input type="text" onChange={(e) => updateForm(e)} name="user" placeholder="Created By" value={user}/> 
+          <input className='form-input' type="text" onChange={(e) => updateForm(e)} name="webformatURL" placeholder="Image URL" value={webformatURL} />
+          <input className='form-input' type="text" onChange={(e) => updateForm(e)} name="tags" placeholder="Tags" value={tags}/>
+          <input className='form-input' type="number" onChange={(e) => updateForm(e)} name="amount" placeholder="Price in Eth" value={amount}/>
+          <input className='form-input' type="text" onChange={(e) => updateForm(e)} name="user" placeholder="Created By" value={user}/> 
           <button className='form-button'>Create your own NFT</button>
         </form>
       );
