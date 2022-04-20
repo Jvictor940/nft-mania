@@ -1,0 +1,43 @@
+/* .flex-container{
+    
+} */
+
+.flex-container>h1{
+    background-color: firebrick;
+    padding: 1em;
+    margin: 0;
+    color:rgb(153, 165, 48);
+}
+
+.about-text {
+    background-color:rgb(220, 232, 243);
+    padding: 1em;
+    height: 765px;
+    width: 30%;
+    float: left;
+    position: absolute;
+}
+
+.about-text > p{
+    margin: auto;
+    position: absolute;
+    bottom: 40%;
+    font-size: 2em;
+    font-weight: bolder;
+    
+}
+
+.about-images-container {
+    background-color: rgb(132, 240, 179);
+    float: right;
+    width: 70%;
+    height: 765px;
+}
+
+.about-images {
+    height: 300px;
+    position: relative;
+    top: 30%;
+    padding: 30px;
+        
+}
