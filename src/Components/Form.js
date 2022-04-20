@@ -3,7 +3,7 @@ import './Form.css'
 
 function Form({ setPictures }) {
 
-const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: ''})
+const [form, setForm] = useState({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: 0})
 const { webformatURL, tags, views, likes, user, amount } = form
 
 const updateForm = (e) => {
@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     // console.log("res is", res, typeof res)
      
     setPictures((prevState) => { return [...prevState, res]})
-    setForm({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: ''})
+    setForm({webformatURL: '', tags: '', views: 0, likes: 0, user:'', amount: 0})
 
     return (
     console.log("submitted")
