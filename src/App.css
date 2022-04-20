@@ -18,10 +18,31 @@
   
 }
 
+.picture-tag{
+  color: #FFC107;
+}
+
 img{
   width: 15rem;
   height: 1fr;
   border: 1px solid yellowgreen;
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.picture-desc{
+  font-size: 15px;
+}
+
+.picture-like-views{
+  
+  font-size: 15px;
+}
+
+.span-tags{
+  color: #FEB139;
+}
+
+.buy-btn{
   margin-bottom: 5px;
 }
