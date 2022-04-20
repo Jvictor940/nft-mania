@@ -2,9 +2,9 @@ import React from 'react'
 
 function Picture({picture}) {
     return( 
-        <div>
+        <div className="picture-item">
             <img src={picture.webformatURL} />
-        </div>
+        </div>    
     )
 }
 export default Picture

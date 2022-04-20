@@ -2,3 +2,26 @@
   text-align: center;
   font-family: 'Roboto Serif',serif;
 }
+
+.picture-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-gap: 1rem;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.picture-item{
+
+  border: 1px solid #FFC069;
+  
+}
+
+img{
+  width: 15rem;
+  height: 1fr;
+  border: 1px solid yellowgreen;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

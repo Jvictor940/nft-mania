@@ -15,6 +15,7 @@ function PictureContainer({pictures}) {
     return( 
         <div> 
             <Search search={search} onSearchChange={handleSearchChange} />
+            <div className="picture-container">
             {
                displayedPictures.map((element) => {
                    return(
@@ -22,6 +23,7 @@ function PictureContainer({pictures}) {
                    )
                }) 
             }
+            </div>
         </div>
     )
 }
