@@ -3,7 +3,7 @@ import Picture from './Picture'
 import Search from './Search'
 
 function PictureContainer({pictures}) {
-    const [search, setSearch] = useState([])
+    const [search, setSearch] = useState("")
     const displayedPictures = pictures.filter(picture => picture.tags.includes(search))
     
     function handleSearchChange(newSearch) {
@@ -14,7 +14,7 @@ function PictureContainer({pictures}) {
 
     return( 
         <div> 
-            <Search search={search} onSearchChange={handleSearchChange} />
+            <Search onSearchChange={handleSearchChange} />
             <div className="picture-container">
             {
                displayedPictures.map((element) => {
