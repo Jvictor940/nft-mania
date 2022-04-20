@@ -3,6 +3,11 @@ import React, {useState} from 'react'
 function Picture({picture}) {
     const [likes, setLikes] = useState(picture.likes)
     const [isLike, setIsLike] = useState(false)
+    const [isSold, setIsSold] = useState(false)
+
+    function handleSold() {
+        setIsSold(!isSold)
+    }
 
     function handleClick() {
         setIsLike(!isLike)
@@ -17,8 +22,8 @@ function Picture({picture}) {
                 <p><strong><span className="span-tags">Seller:</span></strong> <i>{picture.user}</i></p>
                 <p><strong><span className="span-tags">Views:</span></strong> <i>{picture.views}</i></p>
                 <p><strong><span className="span-tags">Likes:</span></strong><i> {likes}</i> <button className='like-btn' onClick={handleClick}>{isLike ? '❤️' : '♡'}</button></p>
-                <p><strong><span className="span-tags">Price:</span></strong><i>{picture.id} <span className='doge-span'>DOGE</span></i></p>
-                <button className="buy-btn">Buy</button>
+                <p><strong><span className="span-tags">Price:</span></strong><i> {picture.id} <span className='doge-span'>DOGE</span></i></p>
+                <button className="buy-btn" onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button>
             </div>
         </div>    
     )
