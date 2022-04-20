@@ -50,3 +50,11 @@ img{
 .doge-span{
   color:#F55353;
 }
+
+.like-btn {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+
+}
