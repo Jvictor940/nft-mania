@@ -23,7 +23,7 @@ function Picture({picture}) {
                 <p><strong><span className="span-tags">Views:</span></strong> <i>{picture.views}</i></p>
                 <p><strong><span className="span-tags">Likes:</span></strong><i> {likes}</i> <button className='like-btn' onClick={handleClick}>{isLike ? '❤️' : '♡'}</button></p>
                 <p><strong><span className="span-tags">Price:</span></strong><i> {picture.id} <span className='doge-span'>DOGE</span></i></p>
-                <button className="buy-btn" onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button>
+                <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button>
             </div>
         </div>    
     )
