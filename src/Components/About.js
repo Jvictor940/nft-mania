@@ -8,7 +8,7 @@ function About() {
             <div className='about-text'>
             <p> Nft Mania is about minting quality pictures rather than 16-bit monkeys. 
                 Believe and we will go to the moon together! Be an early adopter and don't miss out on our whitelist!
-                There will only be 1337 copies of each "artwork" available.
+                There will only be ONE copy of each "artwork" available.
             </p>
             </div>
             <div className='about-images-container'>

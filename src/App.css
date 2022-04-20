@@ -43,6 +43,18 @@ img{
   color: #FEB139;
 }
 
+
+
+.doge-span{
+  color:#F55353;
+}
+
+.like-btn {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
 .buy-btn{
   margin-bottom: 5px;
   cursor: pointer;
@@ -53,19 +65,6 @@ img{
   /* color: #001E6C; */
   font-weight: bolder;
   border-radius: 25px;
-  border: 
-}
-
-.doge-span{
-  color:#F55353;
-}
-
-.like-btn {
-  border: none;
-  background-color: #ffffff;
-  cursor: pointer;
-
-
 }
 
 .sold-btn {
