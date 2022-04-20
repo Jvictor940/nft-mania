@@ -45,6 +45,15 @@ img{
 
 .buy-btn{
   margin-bottom: 5px;
+  cursor: pointer;
+  border:none;
+  background: #FCD900;
+  padding: 1em;
+  width: 150px;
+  /* color: #001E6C; */
+  font-weight: bolder;
+  border-radius: 25px;
+  border: 
 }
 
 .doge-span{
@@ -57,4 +66,13 @@ img{
   cursor: pointer;
 
 
+}
+
+.sold-btn {
+  margin-bottom: 5px;
+  border: none;
+  background: #F1DDBF;
+  padding: 1em;
+  width: 150px;
+  color: #B20600;
 }
