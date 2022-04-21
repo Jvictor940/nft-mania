@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 
-function Picture({picture}) {
+function Picture({picture, setIsVisible, isVisible}) {
     const [likes, setLikes] = useState(picture.likes)
     const [isLike, setIsLike] = useState(false)
     const [isSold, setIsSold] = useState(false)
+    
 
     function handleSold() {
-        setIsSold(!isSold)
+        // setIsSold(!isSold)
+        setIsVisible(!isVisible)
     }
 
     function handleClick() {
@@ -23,7 +25,8 @@ function Picture({picture}) {
                 <p><strong><span className="span-tags">Views:</span></strong> <i>{picture.views}</i></p>
                 <p><strong><span className="span-tags">Likes:</span></strong><i> {likes}</i> <button className='like-btn' onClick={handleClick}>{isLike ? '❤️' : '♡'}</button></p>
                 <p className="picture-price"><strong><span className="span-tags">Price:</span></strong><i> {picture.id} <span className='doge-span'> <img src="https://www.shareicon.net/data/256x256/2015/09/14/101012_doge_512x512.png" className='doge-img'/> </span></i></p>
-                <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button>
+                {/* <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button> */}
+                <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleSold}>Buy</button>
             </div>
         </div>    
     )
