@@ -11,6 +11,7 @@
     left: 50px;
     text-decoration: none;
     color: black;
+    padding-top: 5px;
 }
 
 .nav-home:hover{
@@ -21,7 +22,8 @@
     text-decoration: none;
     position: absolute;
     left: 200px;
-    color: black
+    color: black;
+    padding-top: 5px;
 }
 
 .nav-form:hover {
@@ -31,10 +33,19 @@
 .nav-about{
     text-decoration: none;
     position: absolute;
-    left: 400px;
-    color: black
+    left: 380px;
+    color: black;
+    padding-top: 5px;
 }
 
 .nav-about:hover{
     color: blue
+}
+
+.nft-icon{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 23px;
+    border: none;
 }
