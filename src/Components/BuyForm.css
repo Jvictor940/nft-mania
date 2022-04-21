@@ -1,0 +1,52 @@
+.buy-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: auto;
+    height: 89vh;
+    padding: 2em;
+    border: solid rgb(185, 149, 31);
+}
+
+.buy-form {
+    font-weight: bold;
+    font-size: 1em;
+    width: 700px;
+    border: solid black 1px;
+    padding: 0.5em;
+    border-radius: 35px;
+    position: relative;
+    top: 100px
+}
+
+.confirm-btn {
+    font-weight: bold;
+    font-size: 2em;
+    background: rgb(243, 240, 34);
+    color: navy;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    position: relative;
+    top: 120px;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.abort-btn {
+    font-weight: bold;
+    font-size: 2em;
+    background: rgb(209, 38, 8);
+    color: navy;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    position: relative;
+    top: 120px;
+    width: 200px;
+    margin-left: 50px;
+}
