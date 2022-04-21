@@ -4,7 +4,7 @@ import NavBar from './Components/NavBar';
 import About from './Components/About';
 import Form from './Components/Form';
 import PictureContainer from './Components/PictureContainer';
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, Redirect } from "react-router-dom"
 
 function App() {
   const [pictures, setPictures] = useState([])
@@ -24,8 +24,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <PictureContainer pictures={pictures} />
+        <Route  exact path="/home">
+           <PictureContainer pictures={pictures} />
         </Route>
         <Route exact path="/create">
           <Form setPictures={setPictures} />
@@ -34,6 +34,7 @@ function App() {
           <About />
         </Route>
       </Switch>
+      <Redirect from="/" to="/home" />
     </div>
   );
 }
