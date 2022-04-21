@@ -86,3 +86,8 @@ img{
   top: 10px;
   left: 5px;
 }
+
+.picture-price {
+  position: relative;
+  bottom: 25px;
+}
