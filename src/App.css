@@ -7,10 +7,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   grid-gap: 1rem;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
 }
+
+
 
 .picture-item{
 
@@ -74,4 +77,12 @@ img{
   padding: 1em;
   width: 150px;
   color: #B20600;
+}
+
+.doge-img{
+  width: 28px;
+  border: none;
+  position: relative;
+  top: 10px;
+  left: 5px;
 }
