@@ -1,6 +1,6 @@
 .nav-menu{
     background-color: #EDEDED;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     font-size: 20px;
     border-bottom: 1px solid lightgray;
     font-family: 'Merriweather',serif;
@@ -46,6 +46,6 @@
     position: absolute;
     left: 10px;
     top: 0px;
-    width: 23px;
+    width: 29px;
     border: none;
 }
