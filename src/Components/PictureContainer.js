@@ -9,6 +9,7 @@ function PictureContainer({pictures}) {
     const displayedPictures = pictures.filter(picture => picture.tags.includes(search))
     const [isVisible, setIsVisible] = useState(false)
     const [isSold, setIsSold] = useState(false)
+    const [isSoldBtn, setIsSoldBtn] = useState(false)
     const [picId, setPicId] = useState(0)
     
     function handleSearchChange(newSearch) {
@@ -24,12 +25,12 @@ function PictureContainer({pictures}) {
             {
                displayedPictures.map((element) => {
                    return(
-                       <Picture key={element.id} picture={element} isVisible={isVisible} setIsVisible={setIsVisible} isSold={isSold} setIsSold={setIsSold} setPicId={setPicId}/>
+                       <Picture key={element.id} picture={element} isVisible={isVisible} setIsVisible={setIsVisible} isSold={isSoldBtn} setIsSold={setIsSoldBtn} setPicId={setPicId}/>
                    )
                }) 
             }
             </div>
-            <BuyForm isVisible={isVisible} setIsVisible={setIsVisible} picture={pictures} picId={picId} isSold={isSold} setIsSold={setIsSold} />
+            <BuyForm isVisible={isVisible} setIsVisible={setIsVisible} picture={pictures} picId={picId} isSold={isSold} setIsSold={setIsSold} isSoldBtn={isSoldBtn} setIsSoldBtn={setIsSoldBtn} />
         </div>
     )
 }

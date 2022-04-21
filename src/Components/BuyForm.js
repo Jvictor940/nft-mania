@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import './BuyForm.css'
 
-export default ({ isVisible, setIsVisible, picId, setIsSold }) => {
+export default ({ isVisible, setIsVisible, picId, isSold, setIsSoldBtn }) => {
     const handleBuySubmit = () => {
-            setIsSold(true)
+            setIsSoldBtn(!isSold)
             setIsVisible(!isVisible)
     }
 
     const handleAbort = () => {
-            setIsVisible(true)
+            setIsVisible(!isVisible)
     }
 
     return (
