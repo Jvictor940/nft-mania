@@ -25,12 +25,12 @@ function PictureContainer({pictures}) {
             {
                displayedPictures.map((element) => {
                    return(
-                       <Picture key={element.id} picture={element} isVisible={isVisible} setIsVisible={setIsVisible} isSold={isSoldBtn} setIsSold={setIsSoldBtn} setPicId={setPicId}/>
+                       <Picture key={element.id} picture={element} isVisible={isVisible} setIsVisible={setIsVisible} setPicId={setPicId} isSoldBtn={isSoldBtn} isSold={isSold}/>
                    )
                }) 
             }
             </div>
-            <BuyForm isVisible={isVisible} setIsVisible={setIsVisible} picture={pictures} picId={picId} isSold={isSold} setIsSold={setIsSold} isSoldBtn={isSoldBtn} setIsSoldBtn={setIsSoldBtn} />
+            <BuyForm isVisible={isVisible} setIsVisible={setIsVisible} picture={pictures} picId={picId} isSoldBtn={isSoldBtn} setIsSold={setIsSold} />
         </div>
     )
 }

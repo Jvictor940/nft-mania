@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './BuyForm.css'
 
-export default ({ isVisible, setIsVisible, picId, isSold, setIsSoldBtn }) => {
+export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
     const handleBuySubmit = () => {
-            setIsSoldBtn(!isSold)
+            setIsSold(!isSold)
             setIsVisible(!isVisible)
     }
 

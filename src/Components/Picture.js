@@ -1,18 +1,17 @@
 import React, {useState} from 'react'
 
-function Picture({picture, setIsVisible, isVisible, isSold, setIsSold, setPicId}) {
+function Picture({picture, setIsVisible, isVisible, setPicId, isSold}) {
     const [likes, setLikes] = useState(picture.likes)
     const [isLike, setIsLike] = useState(false)
-    // const [isSold, setIsSold] = useState(false)
+    
     
 
-    function handleSold(e) {
+    function handleSold() {
         // setIsSold(!isSold)
-        console.log(e.target)
         setIsVisible(!isVisible)
         setPicId(picture.id)
-
     }
+
 
     function handleClick() {
         setIsLike(!isLike)
