@@ -18,6 +18,10 @@ function Picture({picture, setIsVisible, setPicId, isSold, setIsSold}) {
         setPicId(picture.id)
     }
 
+    function secondTrigger() {
+        setNewSold(true)
+    }
+
 
     return( 
         <div className="picture-item">
@@ -34,8 +38,8 @@ function Picture({picture, setIsVisible, setPicId, isSold, setIsSold}) {
                 {/* <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleSold}>{isSold ? 'Sold' : 'Buy' }</button> */}
 
                 
-                <button className={isSold ? "sold-btn" : "buy-btn"} onClick={handleBuy} >{isSold ? "Sold" : "Buy"}</button>
-                <button className={newSold ? "sold-btn" : "buy-btn"} onClick={handleBuy} >{newSold ? "Sold" : "Buy"}</button>
+               
+                <button className={picture.sold ? "sold-btn" : "buy-btn"} onClick={handleBuy} >{picture.sold ? "Sold" : "Buy"}</button>
             </div>
         </div>    
     )

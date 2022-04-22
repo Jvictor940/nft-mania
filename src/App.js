@@ -9,6 +9,7 @@ import { Route, Switch, Redirect } from "react-router-dom"
 function App() {
   const [pictures, setPictures] = useState([])
 
+
   const request = async () => {
     let req = await fetch('https://pixabay.com/api/?key=26785058-3bf47108f91b1e398f07fb1e0')
     let res = await req.json()
@@ -25,7 +26,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route  exact path="/home">
-           <PictureContainer pictures={pictures} />
+           <PictureContainer pictures={pictures} setPictures={setPictures} />
         </Route>
         <Route exact path="/create">
           <Form setPictures={setPictures} />

@@ -1,9 +1,10 @@
 import React from "react";
 import './BuyForm.css'
 
-export default ({ isVisible, setIsVisible, picId, setIsSold }) => {
+export default ({ isVisible, setIsVisible, picId, setIsSold, newPictures }) => {
     const handleSold = () => {
             // setIsSold(true) //supposed to trigger first btn from buy => sold
+            newPictures()
             setIsVisible(false)
     }
 
