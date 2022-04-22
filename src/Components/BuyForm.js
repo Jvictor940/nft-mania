@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import './BuyForm.css'
 
-export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
-    const handleBuySubmit = () => {
-            // setIsSold(!isSold)
-            setIsVisible(!isVisible)
+export default ({ isVisible, setIsVisible, picId, setIsSold }) => {
+    const handleSold = () => {
+            // setIsSold(true) //supposed to trigger first btn from buy => sold
+            setIsVisible(false)
     }
 
-    const handleAbort = () => {
-            setIsVisible(!isVisible)
+    const handleCancel = () => {
+            setIsVisible(false)
     }
 
     return (
@@ -22,8 +22,8 @@ export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
                 <input className='buy-form' label="CVC" name="CVC" placeholder="CVC" />
             </div>
             <div>
-                <button className='confirm-btn' onClick={handleBuySubmit}>Confirm</button>
-                <button className='abort-btn'onClick={handleAbort}>Cancel</button>
+                <button className='confirm-btn' onClick={handleSold}>Confirm</button>
+                <button className='abort-btn'onClick={handleCancel}>Cancel</button>
             </div>
         </div>
     )

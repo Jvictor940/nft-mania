@@ -18,7 +18,7 @@ function App() {
     request()
   }, []) 
 
-  console.log(pictures)
+  // console.log(pictures)
   
   return (
     <div className="App">
