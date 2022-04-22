@@ -10,36 +10,60 @@
     position: absolute;
     left: 50px;
     text-decoration: none;
-    color: black;
+    color: #180A0A;
+    padding-top: 5px;
+}
+
+.nav-home-active{
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    color: #4B7BE5;
     padding-top: 5px;
 }
 
 .nav-home:hover{
-    color: blue;
+    color: #4B7BE5;
 }
 
 .nav-form{
     text-decoration: none;
     position: absolute;
     left: 200px;
-    color: black;
+    color: #180A0A;
+    padding-top: 5px;
+}
+
+.nav-form-active{
+    text-decoration: none;
+    position: absolute;
+    left: 200px;
+    color: #4B7BE5;
     padding-top: 5px;
 }
 
 .nav-form:hover {
-    color: blue;
+    color: #4B7BE5;
 }
 
 .nav-about{
     text-decoration: none;
     position: absolute;
     left: 380px;
-    color: black;
+    color: #180A0A;
+    padding-top: 5px;
+}
+
+.nav-about-active {
+    text-decoration: none;
+    position: absolute;
+    left: 380px;
+    color: #4B7BE5;
     padding-top: 5px;
 }
 
 .nav-about:hover{
-    color: blue
+    color: #4B7BE5;
 }
 
 .nft-icon{
