@@ -3,7 +3,7 @@ import './BuyForm.css'
 
 export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
     const handleBuySubmit = () => {
-            setIsSold(!isSold)
+            // setIsSold(!isSold)
             setIsVisible(!isVisible)
     }
 
@@ -12,7 +12,7 @@ export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
     }
 
     return (
-        <div>
+        <div style={{display: isVisible ? "block" : "none"}}>
             <div className="buy-container">
                 <h1>Congratulations! You have chosen to buy the Nft for {picId} 
                 <span className='doge-span'> <img src="https://www.shareicon.net/data/256x256/2015/09/14/101012_doge_512x512.png" className='doge-img'/> </span>
@@ -23,7 +23,7 @@ export default ({ isVisible, setIsVisible, picId, isSold, setIsSold }) => {
             </div>
             <div>
                 <button className='confirm-btn' onClick={handleBuySubmit}>Confirm</button>
-                <button className='abort-btn'onClick={handleAbort}>Abort</button>
+                <button className='abort-btn'onClick={handleAbort}>Cancel</button>
             </div>
         </div>
     )
